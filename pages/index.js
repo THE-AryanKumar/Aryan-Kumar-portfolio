@@ -1,5 +1,6 @@
 import Image from "next/image";
 import ParticleContainer from "../components/ParticlesContainer";
+import {TypeAnimation} from 'react-type-animation';
 import ProjectsBtn from "../components/ProjectsBtn";
 import Avatar from "../components/Avatar";
 import { motion } from "framer-motion";
@@ -17,8 +18,23 @@ const Home = () => {
             exit="hidden"
             className="h1"
           >
-            My World <br /> Into{" "}
-            <span className="text-accent">Digital Reality</span>
+            <div>
+              <span> My World <br /> Into{" "}</span>
+              <TypeAnimation 
+                sequence={[
+                  'Development',
+                  2000,
+                  'Contribution',
+                  2000,
+                  'Programming',
+                  2000,
+                ]}
+                speed={50}
+                className="text-accent"
+                wrapper="span"
+                repeat={Infinity}
+              />
+            </div>
           </motion.h1>
           <motion.p
             variants={fadeIn("down", 0.3)}

@@ -48,12 +48,12 @@ const aboutData = [
     title: "awards",
     info: [
       {
-        title: "Webby Awards - Honoree",
-        stage: "2011 - 2012",
+        title: "SpaceX Awards - Honoree",
+        stage: "2023 - present",
       },
       {
-        title: "Adobe Design Achievement Awards - Finalist",
-        stage: "2009 - 2010",
+        title: "Google Achievement Awards - Finalist",
+        stage: "2022 - 2023",
       },
     ],
   },
@@ -62,15 +62,15 @@ const aboutData = [
     info: [
       {
         title: "UX/UI Designer - XYZ Company",
-        stage: "2012 - 2023",
+        stage: "2023 - present",
       },
       {
         title: "Web Developer - ABC Agency",
-        stage: "2010 - 2012",
+        stage: "2022 - 2023",
       },
       {
         title: "Intern - DEF Corporation",
-        stage: "2008 - 2010",
+        stage: "2021 - 2023",
       },
     ],
   },
@@ -78,16 +78,16 @@ const aboutData = [
     title: "credentials",
     info: [
       {
-        title: "Web Development - ABC University, LA, CA",
-        stage: "2011",
+        title: "Bachelor of Technology - IIIT, Lucknow, UP",
+        stage: "2021",
       },
       {
-        title: "Computer Science Diploma - AV Technical Institute",
-        stage: "2009",
+        title: "Joint Entrance Examination - FIITJEE, Patna, Bihar",
+        stage: "2020",
       },
       {
-        title: "Certified Graphic Designer - ABC Institute, Los Angeles, CA",
-        stage: "2006",
+        title: "12th standard - Infant Jesus School, Patna",
+        stage: "2019",
       },
     ],
   },
@@ -123,8 +123,8 @@ const About = () => {
             exit="hidden"
             className="h2"
           >
-            Captivating <span className="text-accent">stories</span> birth
-            magnificent design.
+            Captivating <span className="text-accent">stories</span> superB
+            magnificent work.
           </motion.h2>
           <motion.p
             variants={fadeIn("right", 0.4)}
@@ -133,8 +133,8 @@ const About = () => {
             exit="hidden"
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
           >
-            10 years ago, I began freelancing as a developer. Since then,
-            I&aposve done remote work for agencies, counsulted for startups, and
+            3 years ago, I began freelancing as a developer. Since then,
+            I&apos;ve done remote work for clients, counsulted for startups, and
             collaborated on digital products for business and consumer use.
           </motion.p>
           <motion.div
@@ -147,7 +147,7 @@ const About = () => {
             <div className="flex flex-1 xl:gap-x-6">
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={10} duration={5} /> +
+                  <CountUp start={0} end={3} duration={5} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Years of experience
@@ -155,7 +155,7 @@ const About = () => {
               </div>
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={250} duration={5} /> +
+                  <CountUp start={0} end={100} duration={5} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Satisfied clients
@@ -163,7 +163,7 @@ const About = () => {
               </div>
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={650} duration={5} /> +
+                  <CountUp start={0} end={10} duration={5} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Finished Projects
@@ -171,7 +171,7 @@ const About = () => {
               </div>
               <div className="relative flex-1">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={8} duration={5} /> +
+                  <CountUp start={0} end={5} duration={5} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Awards
