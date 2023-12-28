@@ -1,6 +1,6 @@
 import Image from "next/image";
 import ParticleContainer from "../components/ParticlesContainer";
-import {TypeAnimation} from 'react-type-animation';
+import { TypeAnimation } from "react-type-animation";
 import ProjectsBtn from "../components/ProjectsBtn";
 import Avatar from "../components/Avatar";
 import { motion } from "framer-motion";
@@ -18,15 +18,18 @@ const Home = () => {
             exit="hidden"
             className="h1"
           >
-            <div>
-              <span> My World <br /> Into{" "}</span>
-              <TypeAnimation 
+            <div className="text-5xl">
+              <span>
+                {" "}
+                My World <br /> Into{" "}
+              </span>
+              <TypeAnimation
                 sequence={[
-                  'Development',
+                  "Development",
                   2000,
-                  'Contribution',
+                  "Contribution",
                   2000,
-                  'Programming',
+                  "Programming",
                   2000,
                 ]}
                 speed={50}
@@ -69,7 +72,7 @@ const Home = () => {
           initial="hidden"
           animate="show"
           exit="hidden"
-          transition={{duration: 1, ease: 'easeInOut'}}
+          transition={{ duration: 1, ease: "easeInOut" }}
           className="w-full h-full max-w-[737px] max-h-[678px] absolute -bottom-32 lg:bottom-0 lg:right-[2%]"
         >
           <Avatar />
