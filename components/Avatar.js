@@ -8,10 +8,12 @@ const Avatar = () => {
         width={737}
         height={678}
         alt=""
-        className="translate-z-0 w-full h-full"
+        className="translate-z-0 w-[650px] h-[550px]"
       />
     </div>
   );
 };
 
 export default Avatar;
+
+

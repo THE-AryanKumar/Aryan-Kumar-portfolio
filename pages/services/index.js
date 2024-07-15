@@ -27,8 +27,7 @@ const Services = () => {
               exit="hidden"
               className="mb-4 max-w-[400px] mx-auto lg:mx-0"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua
+              Explore my diverse portfolio where creativity meets technical expertise, showcasing cutting-edge projects that bring ideas to life with passion and precision.
             </motion.p>
           </div>
           <motion.div

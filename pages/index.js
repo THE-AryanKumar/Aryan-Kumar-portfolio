@@ -46,9 +46,10 @@ const Home = () => {
             exit="hidden"
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
           >
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industrys standard dummy text
-            ever since the 1500s.
+            Hey, I am Aryan Kumar Enthusiastic prefinal year undergraduate
+            student at IIIT Lucknow, deeply passionate about full-stack web
+            development and have been developing web applications since my early
+            academic years.
           </motion.p>
           <div className="flex justify-center xl:hidden relative">
             <ProjectsBtn />
@@ -75,7 +76,10 @@ const Home = () => {
           transition={{ duration: 1, ease: "easeInOut" }}
           className="w-full h-full max-w-[737px] max-h-[678px] absolute -bottom-32 lg:bottom-0 lg:right-[2%]"
         >
-          <Avatar />
+          <div className=" mt-[127px] ml-12">
+            {" "}
+            <Avatar />
+          </div>
         </motion.div>
       </div>
     </div>

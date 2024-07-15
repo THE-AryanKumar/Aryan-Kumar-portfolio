@@ -8,32 +8,43 @@ import {
   RxArrowTopRight,
 } from "react-icons/rx";
 
+import { IoAirplane } from "react-icons/io5";
+import { FaBlog } from "react-icons/fa6";
+import { TbHeartHandshake } from "react-icons/tb";
+
 // data
 const serviceData = [
   {
-    icon: <RxCrop />,
-    title: "Branding",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    link: "https://github.com/THE-AryanKumar/World-Travel",
+    icon: <IoAirplane />,
+    title: "World Travel",
+    description:
+      "Explore World Travel: where each click uncovers a new destination.",
   },
   {
-    icon: <RxPencil2 />,
-    title: "Design",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    link: "https://github.com/THE-AryanKumar/Bloggers",
+    icon: <FaBlog />,
+    title: "Bloggers",
+    description:
+      "Blogger: Every post tells a tale, every click sparks creativity.",
   },
   {
-    icon: <RxDesktop />,
-    title: "Development",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    link: "https://github.com/THE-AryanKumar/Athlete_Backer",
+    icon: <TbHeartHandshake />,
+    title: "Athlete Backers",
+    description: "Athlete Backer: Fueling dreams, empowering champions.",
   },
   {
+    link: "",
     icon: <RxReader />,
-    title: "Copywriting",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    title: "Development",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit dolor sit.",
   },
   {
+    link: "",
     icon: <RxRocket />,
     title: "SEO",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit dolor sit.",
   },
 ];
 
@@ -67,16 +78,20 @@ const ServiceSlider = () => {
       {serviceData.map((item, index) => {
         return (
           <SwiperSlide key={index}>
-            <div className="bg-[rgba(65,47,123,0.15)] h-max rounded-lg px-6 py-8 flex sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointer hover:bg-[rgba(89,65,169,0.15)] transition-all duration-300">
-              <div className="text-4xl text-accent mb-4">{item.icon}</div>
-              <div className="mb-8">
-                <div className="mb-2 text-lg">{item.title}</div>
-                <p className="max-w-[350px] leading-normal">{item.description}</p>
+            <a href={item.link} className="block w-full h-full" target="_blank" rel="noopener noreferrer">
+              <div className="bg-[rgba(65,47,123,0.15)] h-max rounded-lg px-6 py-8 flex sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointer hover:bg-[rgba(89,65,169,0.15)] transition-all duration-300">
+                <div className="text-4xl text-accent mb-4">{item.icon}</div>
+                <div className="mb-8">
+                  <div className="mb-2 text-lg">{item.title}</div>
+                  <p className="max-w-[350px] leading-normal">
+                    {item.description}
+                  </p>
+                </div>
+                <div className="text-3xl">
+                  <RxArrowTopRight className="group-hover:rotate-45 group-hover:text-accent transition-all duration-300" />
+                </div>
               </div>
-              <div className="text-3xl">
-                <RxArrowTopRight className="group-hover:rotate-45 group-hover:text-accent transition-all duration-300"/>
-              </div>
-            </div>
+            </a>
           </SwiperSlide>
         );
       })}

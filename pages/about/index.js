@@ -48,11 +48,11 @@ const aboutData = [
     title: "awards",
     info: [
       {
-        title: "SpaceX Awards - Honoree",
-        stage: "2023 - present",
+        title: "Open Source - Hacktoberfest",
+        stage: "2022 - 2023",
       },
       {
-        title: "Google Achievement Awards - Finalist",
+        title: "Google Cloud Achievement Awards - Finalist",
         stage: "2022 - 2023",
       },
     ],
@@ -61,16 +61,16 @@ const aboutData = [
     title: "experience",
     info: [
       {
-        title: "UX/UI Designer - XYZ Company",
-        stage: "2023 - present",
+        title: "Intern - Walmart Global Tech",
+        stage: "2024 - Present",
       },
       {
-        title: "Web Developer - ABC Agency",
+        title: "Web 3 Developer - AXIOS",
+        stage: "2023 - 2024",
+      },
+      {
+        title: "Public Relation - Ecell HOD",
         stage: "2022 - 2023",
-      },
-      {
-        title: "Intern - DEF Corporation",
-        stage: "2021 - 2023",
       },
     ],
   },
@@ -112,7 +112,9 @@ const About = () => {
         exit="hidden"
         className="hidden xl:flex absolute bottom-0 -left-[370px]"
       >
-        <Avatar />
+        <div className="ml-14">
+          <Avatar />
+        </div>
       </motion.div>
       <div className="container mx-auto h-full flex flex-col items-col items-center xl:flex-row gap-x-6">
         <div className="flex-1 flex flex-col justify-center">
@@ -155,7 +157,7 @@ const About = () => {
               </div>
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={100} duration={5} /> +
+                  <CountUp start={0} end={4} duration={5} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Satisfied clients
@@ -174,7 +176,7 @@ const About = () => {
                   <CountUp start={0} end={5} duration={5} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                  Awards
+                  Open Source
                 </div>
               </div>
             </div>

@@ -27,8 +27,7 @@ const Work = () => {
               exit="hidden"
               className="mb-4 max-w-[400px] mx-auto lg:mx-0"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua
+              Crafting innovative solutions at the nexus of creativity and technology.
             </motion.p>
           </div>
           <motion.div
